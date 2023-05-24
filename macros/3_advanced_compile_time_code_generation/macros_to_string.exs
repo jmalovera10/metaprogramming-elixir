@@ -4,8 +4,6 @@ def compile(translations) do
    end
 
 
-  Building an Internationalization Library • 53
-
    final_ast = quote do
    def t(locale, path, binding \\ [])
    unquote(translations_ast)
